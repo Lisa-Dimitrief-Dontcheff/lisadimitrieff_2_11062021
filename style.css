@@ -1,6 +1,9 @@
 body
 {
     font-family: "raleway";
+    width: fit-content;
+    max-width: 1400px;
+    margin: auto;
 }
 #bloc_page
 {
@@ -412,3 +415,105 @@ img
 {
     margin-top: 40px;
 }
+
+    /*Activités*/ 
+
+#activites
+{ 
+    padding-left: 20px; 
+    padding-right: 20px; 
+} 
+
+#photos_activites
+{ 
+    display: flex; 
+    flex-direction: column; 
+    width: 100%; 
+}
+
+/*Tailles des encarts*/
+
+#encart_vieuxport, 
+#encart_ilesfrioul, 
+#encart_parccalanques, 
+#encart_parclongchamp 
+{ 
+    width: 100%; 
+    height: 200px; 
+    margin-bottom: 25px; 
+} 
+
+#encart_fortpomegues, 
+#encart_notredamedelagarde 
+{ 
+    width: 100%; 
+    height: 200px; 
+} 
+
+/*Taille des photos*/ 
+
+#photo_vieuxport, 
+#photo_fortpomegues, 
+#photo_ilesfrioul, 
+#photo_parccalanques, 
+#photo_notredamedelagarde, 
+#photo_parclongchamp 
+{ 
+    width: 100%;
+    height: 70%; 
+} 
+
+/*Taille des légendes*/ 
+
+#legend_vieuxport, 
+#legend_fortpomegues, 
+#legend_ilesfrioul, 
+#legend_parccalanques, 
+#legend_notredamedelagarde, 
+#legend_parclongchamp 
+{ 
+    width: 100%; 
+    height: 30%; 
+    padding-left: 8px; 
+    padding-top: 15px; 
+}
+
+/*Pied de page*/
+
+
+
+/*Fond*/
+
+footer
+{
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: black;
+    line-height: 1.5;
+    padding-left: 20px;
+}
+
+h4
+{
+    font-weight: bold;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+#apropos
+{
+    padding-right: 200px;
+}
+#noshebergements
+{
+    padding-right: 250px; 
+}
+    
+    
