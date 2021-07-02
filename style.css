@@ -214,7 +214,7 @@ nav a:hover /* bordure et couleur sur les ancres lors du survol*/
     font-weight: bold;
     border-radius: 20px;
     width: 65%;
-    padding: 30px 0 0 30px;
+    align-content: center;
 }
 article
 {
@@ -228,7 +228,7 @@ article img
 #titre_hebergements,
 #suite
 {
-    padding-left: 15px;
+    padding-left: 30px;
 }
 
 #encarts
@@ -236,13 +236,16 @@ article img
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-right: 30px;
+    margin: 30px;
+    margin-bottom: 20px;
+    align-items: center;
 }
 
 #hebergements a
 {
     color: black;
     text-decoration: none;
+    font-weight: normal;
 }
 
 #hebergements strong
@@ -261,11 +264,13 @@ article img
 
 #encarts figure
 {
-    width: 226px;
-    height: 180px;
+    width: 230px;
+    height: 200px;
+    background-color: white;
     border: 1px solid white ;
     border-radius: 20px;
-    box-shadow: 1px 1px 6px #7a7d7f
+    box-shadow: 1px 1px 6px #7a7d7f;
+    margin: 0px;
 }
 .carte
 {
@@ -275,10 +280,10 @@ article img
 
 #photo_cannebiere,
 #photo_port,
-#photo_hlesmouettes,
-#photo_hdelamer,
-#photo_lepanier,
-#photo_hamina 
+#photo_mouettes,
+#photo_mer,
+#photo_panier,
+#photo_amina 
 {
 	width: 224px;
 	height: 110px;
@@ -292,14 +297,14 @@ article img
 #legend5,
 #legend6 
 {
-	width: 224px;
+	width: 214px;
 	height: 70px;
 	border: 3px solid white;
 	border-radius: 0 0 20px 20px;
 	color: black;
-	padding-left: 10px;
-	margin-top: -6px;
 	background-color: white;
+    margin: 0px;
+    padding-left: 10px;
 }
 /*Espace des étoiles*/
 
@@ -324,7 +329,7 @@ aside
     width: 30%;
     background-color: #F2F2F2;
 	border-radius: 20px;
-	padding: 30px 30px 0 30px;
+	padding: 15px;
 }
 aside img
 {
@@ -335,14 +340,20 @@ aside img
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
     border-radius: 15px;
-    margin-left: 25px;   
+    padding: 0px;
+    margin: 0;
 }
 #entete_populaires
 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px;
+    padding: 5px;
+    padding-left: 25px;
+}
+#encarts_populaires
+{
+    padding: 0px;
 }
 #graph
 {
@@ -359,8 +370,9 @@ aside img
     background-color: white;
     margin: 25px;
     margin-bottom: 35px;
+    padding: 3px;
     width: 330px;
-    height: 116px;
+    height: 130px;
     box-shadow: 1px 1px 6px #7a7d7f;
 }
 
@@ -379,7 +391,15 @@ img
     border: 1px solid white;
     border-radius: 20px 0 0 20px;
     width: 130px;
-    height: 145px;
+    height: 130px;
+}
+
+#fig7,
+#fig8,
+#fig9
+{
+    width: 130px;
+    height: 130px;
 }
 
 #legend7,
@@ -390,5 +410,5 @@ img
 }
 .etoiles
 {
-    margin-top: 70px;
+    margin-top: 40px;
 }
