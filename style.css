@@ -47,17 +47,17 @@ header
 }
 
 nav ul{
-	list-style-type: none;
-	display: flex;
+    list-style-type: none;
+    display: flex;
 }
 
 nav li{
-	margin-right: 45px;
+    margin-right: 45px;
 }
 
 nav a{
-	color: black;
-	text-decoration: none;
+    color: black;
+    text-decoration: none;
 }
 
 nav a:hover /* bordure et couleur sur les ancres lors du survol*/
@@ -288,10 +288,10 @@ article img
 #photo_panier,
 #photo_amina 
 {
-	width: 224px;
-	height: 110px;
-	border: 3px solid white;
-	border-radius: 20px 20px 0 0;
+    width: 224px;
+    height: 110px;
+    border: 3px solid white;
+    border-radius: 20px 20px 0 0;
 }
 #legend1,
 #legend2,
@@ -300,12 +300,12 @@ article img
 #legend5,
 #legend6 
 {
-	width: 214px;
-	height: 70px;
-	border: 3px solid white;
-	border-radius: 0 0 20px 20px;
-	color: black;
-	background-color: white;
+    width: 214px;
+    height: 70px;
+    border: 3px solid white;
+    border-radius: 0 0 20px 20px;
+    color: black;
+    background-color: white;
     margin: 0px;
     padding-left: 10px;
 }
@@ -316,13 +316,13 @@ article img
 #fig4 i,
 #fig5 i
 {
-	padding-top: 8px;
+    padding-top: 8px;
 }
 #fig2 i,
 #fig6 i
 {
-	color: #0065FC;/*Toutes les étoiles sont bleues*/
-	padding-top: 8px;
+    color: #0065FC;/*Toutes les étoiles sont bleues*/
+    padding-top: 8px;
 }
 
     /*Bloc les plus populaires*/
@@ -331,8 +331,8 @@ aside
 {
     width: 30%;
     background-color: #F2F2F2;
-	border-radius: 20px;
-	padding: 15px;
+    border-radius: 20px;
+    padding: 15px;
 }
 aside img
 {
@@ -415,66 +415,95 @@ img
 
     /*Activités*/ 
 
-#activites
-{ 
-    padding-left: 20px; 
-    padding-right: 20px; 
-} 
-
-#photos_activites
+#activite
 { 
     display: flex; 
-    flex-direction: column; 
-    width: 100%; 
+    flex-direction: row;
+}
+#activite_marseille a,
+#activite_marseille a:visited
+{
+    color: black;
+    text-decoration: none;
 }
 
 /*Tailles des encarts*/
 
-#encart_vieuxport, 
-#encart_ilesfrioul, 
-#encart_parccalanques, 
-#encart_parclongchamp 
-{ 
-    width: 100%; 
-    height: 200px; 
-    margin-bottom: 25px; 
-} 
-
 #encart_fortpomegues, 
+#encart_ilesfrioul, 
+#encart_parclongchamp, 
 #encart_notredamedelagarde 
 { 
-    width: 100%; 
-    height: 200px; 
+    width: 234px;
+    height: 175px; 
+    margin-bottom: 25px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 1px 1px 6px #7a7d7f;
 } 
+#encart_parccalanques,
+#encart_vieuxport 
+{ 
+    width: 300px;
+    height: 425px; 
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 1px 1px 6px #7a7d7f;
+}
+#encart_vieuxport
+{
+    margin-left: 0px;
+}
+#encart_parclongchamp, 
+#encart_notredamedelagarde
+{
+    margin-right: 0px;
+}
 
 /*Taille des photos*/ 
 
-#photo_vieuxport, 
+#photo_vieuxport,
+#photo_parccalanques
+{
+    width: 300px;
+    height: 375px;
+    border: none;
+    border-radius: 25px 25px 0 0;
+}
 #photo_fortpomegues, 
 #photo_ilesfrioul, 
-#photo_parccalanques, 
 #photo_notredamedelagarde, 
 #photo_parclongchamp 
 { 
-    width: 100%;
-    height: 70%; 
+    width: 234px;
+    height: 120px;
+    border: none;
+    border-radius: 25px 25px 0 0; 
 } 
 
 /*Taille des légendes*/ 
 
-#legend_vieuxport, 
 #legend_fortpomegues, 
-#legend_ilesfrioul, 
-#legend_parccalanques, 
+#legend_ilesfrioul,
 #legend_notredamedelagarde, 
 #legend_parclongchamp 
 { 
-    width: 100%; 
-    height: 30%; 
+    width: 234px; 
+    height: 50px; 
     padding-left: 8px; 
-    padding-top: 15px; 
+    padding-top: 15px;
+    font-weight: bold;
 }
 
+#legend_parccalanques,
+#legend_vieuxport
+{
+    width: 300px; 
+    height: 50px; 
+    padding-left: 13px; 
+    padding-top: 15px;
+    font-weight: bold;
+}
 /*Pied de page*/
 
 
@@ -511,15 +540,58 @@ h4
 #noshebergements
 {
     padding-right: 250px; 
-}
-    
-@media all and (max-width: 667px)
+}        
+
+    /*tentative de version tablette incomplette et brouillon*/
+@media screen and (min-width: 768px) and (max-width: 1024px)
 {
     body
     {
         margin: 0em;
         padding: 0em;
-        max-width: 667px;
+    }
+    #bloc_page
+    {
+        margin: 0em;
+        padding: 0em;
+    }
+    
+    header
+    {   
+        display: flex;
+        flex-direction: column;
+        margin: 0em;
+        padding: 0px;
+    }
+
+    #logo
+    {
+        margin-top: 20px;
+    }
+    #logo img
+    {
+        margin-left: 20px;
+    }
+    
+    #ancres
+    {
+        flex-direction: row;
+        font-size: 25px;
+    }
+    #lien_hebergements
+    {
+        margin-right: 175px;
+    }
+}
+
+    /*version teleohone*/
+@media all and (max-width: 448px)
+{
+    body
+    {
+        margin: 0em;
+        padding: 0em;
+        max-width: 448px;
     }
     #bloc_page
     {
