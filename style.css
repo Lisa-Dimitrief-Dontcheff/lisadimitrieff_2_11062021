@@ -543,6 +543,14 @@ h4
     {
         margin-left: 20px;
     }
+
+    nav a:hover
+{
+    color: #0065FC;
+    border-bottom: 3px solid #0065FC;
+    border-bottom-width: 330px;
+    border-top: none;
+}
     #ancres
     {
         width: 100%;
@@ -554,6 +562,17 @@ h4
         padding: 0px;
         justify-content: space-between;
         width: 100%;
+    }
+    #lien_hebergements
+    {
+        margin-left: 40px;
+        margin-right: 50px;
+        width: 50%;
+    }
+    #lien_activites
+    {
+        margin-right: 150px;
+        width: 50%;
     }
     #inscription
     {
