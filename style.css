@@ -584,20 +584,20 @@ h4
     }
 }
 
-    /*version teleohone*/
-@media all and (max-width: 448px)
+    /*version telephone*/
+@media all and (max-width: 667px)
 {
     body
     {
         margin: 0em;
         padding: 0em;
-        max-width: 448px;
+        width: auto;
+        box-sizing: border-box;
     }
     #bloc_page
     {
         margin: 0em;
         padding: 0em;
-        max-width: 667px;
     }
     header
     {   
@@ -616,39 +616,101 @@ h4
         margin-left: 20px;
     }
 
+    nav
+    {
+        width: 100%;
+    }
+    nav ul
+    {
+        width: 100%;
+        padding: 0;
+    }
+    nav li
+    {
+        width: 50%;
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 10px;
+        margin: 0;
+        text-align: center;
+    }
+    #inscription
+    {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
     nav a:hover
-{
-    color: #0065FC;
-    border-bottom: 3px solid #0065FC;
-    border-bottom-width: 330px;
-    border-top: none;
-}
+    {
+        padding-top: 37px;
+    }
+    nav li a:hover
+    {
+        border-top: none;
+    }
+    nav li:hover
+    {
+        border-color: #0065FC;
+        color: #0065FC;
+    }
     #ancres
     {
         width: 100%;
         flex-direction: column-reverse;
         flex-wrap: wrap;
     }
+    #bloc_recherche
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    form
+    {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .map
+    {
+        width: 10%;
+    }
+    input
+    {
+        width: 80%;
+    }
+    #rechercher
+    {
+        width: 10%;
+        border-radius: 10px;
+    }
+    #text_rechercher
+    {
+        display: none;
+    }
+    #search
+    {
+        display: block;
+    }
+    /*
     #liens_mobiles
     {
         padding: 0px;
-        justify-content: space-between;
         width: 100%;
     }
     #lien_hebergements
     {
         margin-left: 40px;
         margin-right: 50px;
-        width: 50%;
+        font-size: 50px;
     }
     #lien_activites
     {
         margin-right: 150px;
-        width: 50%;
+        font-size: 50px;
     }
     #inscription
     {
-        align-self: flex-end;
         padding: 16px;
+        font-size: 50px;
+        
     }
+    */
 } 
