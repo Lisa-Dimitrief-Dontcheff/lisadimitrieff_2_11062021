@@ -543,7 +543,7 @@ h4
 }        
 
     /*tentative de version tablette incomplette et brouillon*/
-@media screen and (min-width: 768px) and (max-width: 1024px)
+@media all and (min-width: 768px) and (max-width: 1024px)
 {
     body
     {
@@ -672,9 +672,13 @@ h4
     {
         width: 10%;
     }
-    input
+    #recherche
     {
-        width: 80%;
+        width: 220px;
+    }
+    #barre_recherche
+    {
+        padding-left: 15px;
     }
     #rechercher
     {
@@ -689,16 +693,18 @@ h4
     {
         display: block;
     }
+    #eco,
+    #famille,
+    #romantique,
+    #animaux
+    {
+        margin-right: 0;
+    }
     #filtres_boite
     {
-        width: auto;
         flex-wrap: wrap;
     }
     #liens ul
-    {
-        flex-wrap: wrap;
-    }
-    #reponse_text
     {
         flex-wrap: wrap;
     }
@@ -803,5 +809,13 @@ h4
     {
         padding-right: 0;
         margin-left: 10px;
+    }
+    section h1
+    {
+        padding-left: 15px;
+    }
+    #soustitre
+    {
+        padding-left: 15px;
     }
 } 
