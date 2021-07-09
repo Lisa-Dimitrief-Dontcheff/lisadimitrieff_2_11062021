@@ -711,6 +711,12 @@ h4
         width: auto;
         border-radius: 0;
     }
+    .card1 a
+    {
+        margin-left: 0;
+        margin-right: 0;
+        align-items: center;
+    }
     #hebergements
     {
         width: auto;
