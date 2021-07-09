@@ -725,7 +725,7 @@ h4
     }
     #titre_hebergements
     {
-        margin-left: 20px;
+        margin-left: 15px;
         padding: 0;
     }
     #titre_activite
@@ -739,15 +739,16 @@ h4
     }
     #entete_populaires
     {
-        padding-left: 20px;
+        padding-left: 15px;
     }
     #encarts
     {
-        margin-left: 20px;
+        margin-left: 15px;
+
     }
     #encarts_populaires
     {
-        margin-left: 20px;
+        margin-left: 15px;
         align-content: center;
     }
     #encarts figure
@@ -756,7 +757,7 @@ h4
     }
     #suite
     {
-        padding-left: 20px;
+        padding-left: 15px;
     }
     #photo_cannebiere,
     #photo_port,
