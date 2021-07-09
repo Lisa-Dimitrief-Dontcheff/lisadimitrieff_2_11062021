@@ -711,29 +711,52 @@ h4
         width: auto;
         border-radius: 0;
     }
-    .card1 a
+    .card1
     {
-        margin-left: 0;
-        margin-right: 0;
-        align-items: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     #hebergements
     {
         width: auto;
         background-color: white;
     }
+    #titre_hebergements
+    {
+        margin-left: 20px;
+        padding: 0;
+    }
     #titre_activite
     {
-        margin-left: 25px;
+        margin-left: 20px;
     }
     #activite
     {
         flex-direction: column;
-        align-items: center;
+        margin-left: 20px;
+    }
+    #entete_populaires
+    {
+        padding-left: 20px;
+    }
+    #encarts
+    {
+        margin-left: 20px;
+    }
+    #encarts_populaires
+    {
+        margin-left: 20px;
+        align-content: center;
     }
     #encarts figure
     {
         width: 330px;
+    }
+    #suite
+    {
+        padding-left: 20px;
     }
     #photo_cannebiere,
     #photo_port,
