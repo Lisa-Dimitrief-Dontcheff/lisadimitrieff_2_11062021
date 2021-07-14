@@ -542,20 +542,35 @@ h4
     padding-right: 250px; 
 }        
 
-    /*tentative de version tablette incomplette et brouillon*/
+    /*version tablette*/
 @media all and (min-width: 768px) and (max-width: 1024px)
 {
     body
     {
         margin: 0em;
         padding: 0em;
+        width: auto;
+        box-sizing: border-box;
     }
     #bloc_page
     {
         margin: 0em;
         padding: 0em;
     }
-    
+        /*bases*/
+    h1
+    {
+        font-size: 1.75em;
+    }
+    h2
+    {
+        font-size: 1.6em;
+    }
+    #soustitre
+    {
+        font-size: 1.4em;
+    }
+        /*header*/
     header
     {   
         display: flex;
@@ -572,15 +587,254 @@ h4
     {
         margin-left: 20px;
     }
-    
+
+    nav
+    {
+        width: 100%;
+    }
+    nav ul
+    {
+        width: 100%;
+        padding: 0;
+    }
+    nav li
+    {
+        width: 50%;
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 10px;
+        margin: 0;
+        text-align: center;
+    }
+    #inscription
+    {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav a:hover
+    {
+        padding-top: 37px;
+    }
+    nav li a:hover
+    {
+        border-top: none;
+    }
+    nav li:hover
+    {
+        border-color: #0065FC;
+        color: #0065FC;
+    }
     #ancres
     {
-        flex-direction: row;
-        font-size: 25px;
+        width: 100%;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        font-size: 1.4em;
     }
-    #lien_hebergements
+        /* Barre de recherche*/
+    #bloc_recherche
     {
-        margin-right: 175px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    form
+    {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .map
+    {
+        width: 10%;
+    }
+    #recherche
+    {
+        width: 80%;
+    }
+    #barre_recherche
+    {
+        padding-left: 15px;
+    }
+    #rechercher
+    {
+        width: 10%;
+        border-radius: 10px;
+    }
+    #text_rechercher
+    {
+        display: none;
+    }
+    #search
+    {
+        display: block;
+    }
+        /* filtres*/
+    #eco,
+    #famille,
+    #romantique,
+    #animaux
+    {
+        margin-right: 0;
+    }
+    #filtres_boite
+    {
+        flex-wrap: wrap;
+    }
+    #liens ul
+    {
+        flex-wrap: wrap;
+    }
+        /* les populaires*/
+    .main
+    {
+        flex-direction: column-reverse;
+    }
+    #entete_populaires
+    {
+        padding-left: 15px;
+    }
+    #les_populaires
+    {
+        width: auto;
+        border-radius: 0;
+    }
+    #encarts_populaires
+    {
+        margin-left: 15px;
+        align-content: center;
+    }
+    .card1
+    {
+        margin-left: 20px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 90%;
+        height: 227px;
+    }
+    aside img
+    {
+        width: 400px;
+        height: 225px;
+    }
+    #legend7,
+    #legend8,
+    #legend9
+    {
+        padding-left: 290px;
+        padding-top: 0px;
+        font-size: 1.4em;
+        width: auto;
+    }
+    .etoiles
+    {
+        margin-top: 95px;
+    }
+        /*les hebergements*/
+    #hebergements
+    {
+        width: auto;
+        background-color: white;
+    }
+    #titre_hebergements
+    {
+        margin-left: 15px;
+        padding: 0;
+    }
+    #photo_cannebiere,
+    #photo_port,
+    #photo_mouettes,
+    #photo_mer,
+    #photo_panier,
+    #photo_amina
+    {
+        width: 695px;
+        height: 225px;
+    }
+    #encarts figure
+    {
+        width: 700px;
+        height: 350px;
+    }
+    #legend1,
+    #legend2,
+    #legend3,
+    #legend4,
+    #legend5,
+    #legend6
+    {
+        font-size: 1.4em;
+        width: auto;
+    }
+        /*activite*/
+    #titre_activite
+    {
+        margin-left: 20px;
+    }
+    #activite
+    {
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    
+    
+    #suite
+    {
+        padding-left: 15px;
+    }
+    #photo_vieuxport,
+    #photo_parccalanques,
+    #photo_fortpomegues, 
+    #photo_ilesfrioul, 
+    #photo_notredamedelagarde, 
+    #photo_parclongchamp 
+    {
+        width: 700px;
+        height: 225px;
+    }
+    #encart_fortpomegues, 
+    #encart_ilesfrioul, 
+    #encart_parclongchamp, 
+    #encart_notredamedelagarde,
+    #encart_parccalanques,
+    #encart_vieuxport
+    {
+        width: 700px;
+        height: 300px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #legend_fortpomegues, 
+    #legend_ilesfrioul,
+    #legend_notredamedelagarde, 
+    #legend_parclongchamp,
+    #legend_parccalanques,
+    #legend_vieuxport
+    {
+        font-size: 1.8em;
+        width: auto;
+    }
+        /*footer*/
+    footer
+    {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #apropos,
+    #noshebergements,
+    #assistance
+    {
+        padding-right: 0;
+        margin-left: 10px;
+        font-size: 1.4em;
+    }
+    section h1
+    {
+        padding-left: 15px;
+    }
+    #soustitre
+    {
+        padding-left: 15px;
     }
 }
 
@@ -658,6 +912,7 @@ h4
         flex-direction: column-reverse;
         flex-wrap: wrap;
     }
+        /* Barre de recherche*/
     #bloc_recherche
     {
         padding-left: 20px;
@@ -674,7 +929,7 @@ h4
     }
     #recherche
     {
-        width: 220px;
+        width: 80%;
     }
     #barre_recherche
     {
@@ -693,6 +948,7 @@ h4
     {
         display: block;
     }
+        /* filtres*/
     #eco,
     #famille,
     #romantique,
@@ -708,14 +964,24 @@ h4
     {
         flex-wrap: wrap;
     }
+        /* les populaires*/
     .main
     {
         flex-direction: column-reverse;
+    }
+    #entete_populaires
+    {
+        padding-left: 15px;
     }
     #les_populaires
     {
         width: auto;
         border-radius: 0;
+    }
+    #encarts_populaires
+    {
+        margin-left: 15px;
+        align-content: center;
     }
     .card1
     {
@@ -724,6 +990,7 @@ h4
         padding-left: 0px;
         padding-right: 0px;
     }
+        /*les hebergements*/
     #hebergements
     {
         width: auto;
@@ -734,6 +1001,21 @@ h4
         margin-left: 15px;
         padding: 0;
     }
+    #photo_cannebiere,
+    #photo_port,
+    #photo_mouettes,
+    #photo_mer,
+    #photo_panier,
+    #photo_amina
+    {
+        width: 325px;
+    }
+    #encarts
+    {
+        margin-left: 15px;
+
+    }
+        /*activite*/
     #titre_activite
     {
         margin-left: 20px;
@@ -743,20 +1025,7 @@ h4
         flex-direction: column;
         margin-left: 20px;
     }
-    #entete_populaires
-    {
-        padding-left: 15px;
-    }
-    #encarts
-    {
-        margin-left: 15px;
-
-    }
-    #encarts_populaires
-    {
-        margin-left: 15px;
-        align-content: center;
-    }
+    
     #encarts figure
     {
         width: 330px;
@@ -764,15 +1033,6 @@ h4
     #suite
     {
         padding-left: 15px;
-    }
-    #photo_cannebiere,
-    #photo_port,
-    #photo_mouettes,
-    #photo_mer,
-    #photo_panier,
-    #photo_amina
-    {
-        width: 325px;
     }
     #photo_vieuxport,
     #photo_parccalanques,
@@ -796,7 +1056,7 @@ h4
         margin-left: 0;
         margin-right: 0;
     }
-    
+        /*footer*/
     footer
     {
         width: auto;
